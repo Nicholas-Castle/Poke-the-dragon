@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dragon Clicker</title>
+  </head>
+  <body>
+    <h1>Click the dragon</h1>
+        <img src="dragon.jpg" alt="Image of a dragon" id="dragonPic">
+            <div id="counter">
+            </div>
+    <script>
+       let dragonPic = document.getElementById("dragonPic"), count = 0;
+       dragonPic.addEventListener('click', function(){
+         count += 1;
+         console.log(count);
+         document.querySelector("#counter").innerHTML = `You've poked the dragon ${count} times`;
+       }, false);
+
+       </script>
+  </body>
+
+</html>
